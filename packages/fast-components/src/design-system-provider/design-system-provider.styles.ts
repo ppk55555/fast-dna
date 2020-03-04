@@ -7,6 +7,7 @@ export const DesignSystemProviderStyles = css`
 
     :host {
         display: block;
+
         --neutral-foreground-rest: #2b2b2b;
         --neutral-foreground-hover: #2b2b2b;
         --neutral-foreground-active: #2b2b2b;
