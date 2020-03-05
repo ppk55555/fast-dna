@@ -8,5 +8,6 @@ Here you'll find specifications for custom elements and other library features.
 - [Card](./card/card.md)
 - [Dialog](./dialog/dialog.md)
 - [Form associated custom elements]("./form-associated-custom-element.md")
+- [Progress](./progress.md)
 - [Switch](./switch.md)
 - [Tree View](./tree-view/tree-view.md)
