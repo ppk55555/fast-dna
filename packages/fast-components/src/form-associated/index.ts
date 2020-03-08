@@ -95,7 +95,7 @@ export abstract class FormAssociated<
 
     @attr
     public disabled: boolean = false;
-    private disabledChanged(): void {
+    protected disabledChanged(): void {
         const disabled = bool(this.disabled);
         if (this.proxy instanceof HTMLElement) {
             this.proxy.disabled = disabled; // TODO: https://github.com/microsoft/fast-dna/issues/2742
@@ -106,7 +106,7 @@ export abstract class FormAssociated<
 
     @attr
     public name: string;
-    private nameChanged(): void {
+    protected nameChanged(): void {
         if (this.proxy instanceof HTMLElement) {
             this.proxy.name = this.name;
         }
@@ -117,7 +117,7 @@ export abstract class FormAssociated<
      */
     @attr
     public required: boolean = false;
-    private requiredChanged(): void {
+    protected requiredChanged(): void {
         const required = bool(this.required);
         if (this.proxy instanceof HTMLElement) {
             this.proxy.required = required; // TODO: https://github.com/microsoft/fast-dna/issues/2742
